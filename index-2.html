@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Randy — Junior Web Developer and Computer Engineering student in Cameroon.">
+<title>Randy | Web Developer</title>
+<style>
+:root{--bg:#101713;--panel:#18231d;--text:#f4f1e8;--muted:#b7c1b8;--accent:#b8e986;--line:#304238}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 Arial, sans-serif}
+.wrap{width:min(1050px,90%);margin:auto}header{padding:22px 0;border-bottom:1px solid var(--line)}nav{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}.brand{font-weight:800;font-size:1.2rem;color:var(--accent)}nav a{color:var(--muted);text-decoration:none;margin-left:15px;font-size:.95rem}
+.hero{padding:82px 0 65px}.tag{color:var(--accent);font-weight:bold;letter-spacing:2px;text-transform:uppercase;font-size:.78rem}h1{font-size:clamp(2.5rem,8vw,5rem);line-height:1.05;margin:18px 0}h1 span{color:var(--accent)}.lead{color:var(--muted);max-width:650px;font-size:1.1rem}.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-block;padding:12px 19px;border-radius:7px;background:var(--accent);color:#142017;text-decoration:none;font-weight:bold}.btn.alt{background:transparent;color:var(--text);border:1px solid var(--line)}
+section{padding:48px 0;border-top:1px solid var(--line)}h2{font-size:2rem;margin:0 0 20px}.muted{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:22px}.card h3{margin-top:0}.skills{display:flex;flex-wrap:wrap;gap:10px}.skill{border:1px solid var(--line);border-radius:30px;padding:8px 13px;color:var(--muted)}footer{padding:30px 0;color:var(--muted);font-size:.9rem}
+a{overflow-wrap:anywhere}
+@media(max-width:520px){nav a{margin:0 10px 0 0}.hero{padding:58px 0 42px}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav><div class="brand">RANDY<span style="color:white">.</span></div><div><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div></nav></div></header>
+<main class="wrap">
+<section class="hero" style="border:0">
+<div class="tag">Computer Engineering Student · Cameroon</div>
+<h1>Building useful<br><span>digital solutions.</span></h1>
+<p class="lead">Hello, I'm Randy — a junior web developer learning to turn real-world problems into simple, practical web applications. I work with frontend technologies and Python/Django.</p>
+<div class="buttons"><a class="btn" href="#projects">View my projects</a><a class="btn alt" href="#contact">Contact me</a></div>
+</section>
+<section id="about"><h2>About me</h2><p class="muted">I am a Computer Engineering student based in Cameroon, developing my skills in web development and software engineering. I enjoy building practical projects, learning how systems work, and improving through hands-on experience.</p></section>
+<section id="skills"><h2>Skills</h2><div class="skills"><span class="skill">HTML5</span><span class="skill">CSS3</span><span class="skill">JavaScript</span><span class="skill">Python</span><span class="skill">Django</span><span class="skill">Bootstrap — learning</span><span class="skill">Git & GitHub — learning</span><span class="skill">Linux / Bash — learning</span><span class="skill">SQL — learning</span></div></section>
+<section id="projects"><h2>Selected projects</h2><div class="grid">
+<article class="card"><h3>Douala Tech Store</h3><p class="muted">A responsive product catalogue demo built with HTML, CSS and JavaScript. Includes product categories and WhatsApp enquiry interaction.</p><p><strong>Status:</strong> Demo built</p></article>
+<article class="card"><h3>Student Management System</h3><p class="muted">A learning project focused on managing student records through an admin-controlled system, using Python and Django.</p><p><strong>Status:</strong> In progress</p></article>
+</div></section>
+<section id="contact"><h2>Let's connect</h2><p class="muted">For freelance opportunities, collaboration, or questions, contact me:</p><div class="buttons"><a class="btn" id="emailLink" href="mailto:YOUR_EMAIL@example.com">Email me</a><a class="btn alt" id="waLink" href="https://wa.me/237600000000">WhatsApp</a></div><p class="muted" style="font-size:.85rem;margin-top:20px">Before publishing, replace the placeholder email and WhatsApp number in this file with your own contact details.</p></section>
+</main>
+<footer><div class="wrap">© <span id="year"></span> Randy. Built with HTML and CSS.</div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body></html>
